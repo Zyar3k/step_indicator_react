@@ -13,7 +13,7 @@ function App() {
       <Route exact path='/'>
         <h2 className='homeTitle'>Home</h2>
       </Route>
-      <Route exact to='/signup/:step' component={Signup} />
+      <Route exact path='/signup/:step' component={Signup} />
     </Router>
   );
 }

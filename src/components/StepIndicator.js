@@ -3,23 +3,27 @@ import { Route, NavLink } from "react-router-dom";
 const StepIndicator = () => {
   const steps = [
     {
-      path: "/step1",
+      path: "/signup/step1",
     },
     {
-      path: "/step2",
+      path: "/signup/step2",
     },
     {
-      path: "/step3",
+      path: "/signup/step3",
     },
     {
-      path: "/step4",
+      path: "/signup/step4",
     },
   ];
+  const handleStop = (e) => {
+    e.preventDefault();
+  };
   return (
     <div className='stepIndicator'>
       {steps.map((step, index) => (
         <>
           <NavLink
+            onClick={handleStop}
             exact
             activeClassName='activeLink'
             key={index}
