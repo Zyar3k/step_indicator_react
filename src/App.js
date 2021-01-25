@@ -1,6 +1,7 @@
 import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
 
 import "./App.css";
+import Signup from "./components/Signup";
 
 function App() {
   return (
@@ -9,9 +10,10 @@ function App() {
         <NavLink to='/'>Home</NavLink>
         <NavLink to='/signup/step1'>Sign Up</NavLink>
       </nav>
-      <Route>
+      <Route exact path='/'>
         <h2 className='homeTitle'>Home</h2>
       </Route>
+      <Route exact to='/signup/:step' component={Signup} />
     </Router>
   );
 }
