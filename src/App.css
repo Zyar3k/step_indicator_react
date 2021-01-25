@@ -1,0 +1,31 @@
+/* Global Styles */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* Nav Styles */
+
+nav {
+  width: 100%;
+  padding: 20px 30px;
+  background: #333;
+}
+
+nav a {
+  margin-right: 10px;
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+}
+
+/* Home Title Styles */
+
+.homeTitle {
+  margin: 18px 30px;
+  font-size: 30px;
+  line-height: 1;
+}
