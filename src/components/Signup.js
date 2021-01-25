@@ -1,9 +1,11 @@
 import { Route, Link } from "react-router-dom";
+import StepIndicator from "./StepIndicator";
 
 const Signup = () => {
   return (
     <div className='signup'>
       <div className='mainContainer'>
+        <StepIndicator />
         <div className='output'>
           <Route exact path='signup/step1'>
             First step
