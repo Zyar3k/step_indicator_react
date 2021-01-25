@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Route, NavLink } from "react-router-dom";
+import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 
 import "./App.css";
 import Signup from "./components/Signup";
@@ -7,8 +7,8 @@ function App() {
   return (
     <Router>
       <nav>
-        <NavLink to='/'>Home</NavLink>
-        <NavLink to='/signup/step1'>Sign Up</NavLink>
+        <Link to='/'>Home</Link>
+        <Link to='/signup/step1'>Sign Up</Link>
       </nav>
       <Route exact path='/'>
         <h2 className='homeTitle'>Home</h2>
